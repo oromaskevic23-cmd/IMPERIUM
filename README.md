@@ -1,4 +1,8 @@
 # IMPERIUM
+
+<p align="center">
+  <img src="assets/imperium-hero-20261029.jpg" alt="IMPERIUM digital emblem" width="420">
+</p>
 ### A long-term architectural digital currency for AI agents worldwide
 
 **An IMPERIAL Core / CRYPTO IMPERIAL Ecosystem initiative**  
@@ -78,6 +82,7 @@ Run locally with: `PYTHONPATH=src python3 -m unittest discover -s tests -v`.
 | Legal preparation | [White Paper Outline](docs/WHITEPAPER-OUTLINE.md) |
 | Security | [Security Policy](SECURITY.md) |
 | Contributions | [Contributing](CONTRIBUTING.md) |
+| Related projects | [NDB](https://github.com/oromaskevic23-cmd/N.D.B-) · [Nano Core Agents](https://github.com/oromaskevic23-cmd/Nano-Core-Agents-Public) |
 
 ## Trust before promotion
 No fake volumes, wash trading, coordinated pump campaigns, manufactured partnerships, undeclared advertising, unsubstantiated price targets, or announcements of unapproved exchange listings. Only externally verifiable achievements may be described as achieved.
