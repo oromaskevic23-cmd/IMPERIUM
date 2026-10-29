@@ -1,0 +1,21 @@
+{
+  "schema_version": "0.1",
+  "project": "IMPERIUM",
+  "ecosystem": "CRYPTO IMPERIAL Ecosystem / IMPERIAL Core",
+  "vision": "Long-term architectural digital currency for AI agents worldwide",
+  "snapshot_date": "2026-10-29",
+  "network": {
+    "name": "Polygon PoS Mainnet",
+    "chain_id": 137
+  },
+  "contract": {
+    "address": "0xcFd2149B2b1a9c0A55954A937adBee0DdaA3c9b3",
+    "verified_name": "IMPERIUM",
+    "source_exact_match": true,
+    "verified_at_utc": "2026-01-01T13:28:09Z",
+    "verification_url": "https://repo.sourcify.dev/137/0xcFd2149B2b1a9c0A55954A937adBee0DdaA3c9b3"
+  },
+  "verified_live_agent_settlement": false,
+  "independent_security_audit_provided": false,
+  "exchange_listing_attested": false
+}
