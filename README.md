@@ -10,6 +10,8 @@
 
 > **Status (29 October 2026):** The IMPERIUM contract is deployed and source-verified on Polygon. Global AI-agent adoption, agent-payment production infrastructure, independent security audit, exchange listing and market liquidity are **not claimed**.
 
+**Explore the two-project overview:** [IMPERIUM & NDB in the CRYPTO IMPERIAL Ecosystem →](https://github.com/oromaskevic23-cmd/CRYPTO-IMPERIAL-Ecosystem-Public#imperium--ndb)
+
 ## On-chain identity
 
 | Property | Evidence |
