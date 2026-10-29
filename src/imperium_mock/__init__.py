@@ -1,1 +1,1 @@
-"""IMPERIUM mock settlement experiments (no live transfer)."""\n
+"""IMPERIUM mock settlement experiments (no live transfer)."""
