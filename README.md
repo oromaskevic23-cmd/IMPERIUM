@@ -58,6 +58,13 @@ Reconciliation -> Proof Passport -> Audit Ledger
 - WORK AI service-order settlement following client acceptance and authorization.
 - Inter-organizational economic coordination without bypassing owner controls.
 
+## Offline engineering prototype (experimental)
+`src/imperium_mock/settlement.py` contains a **standard-library-only, in-memory simulation** of agent settlement governance. It rejects wrong-chain/wrong-contract requests, unallowlisted recipients, excessive amounts, expired intents, self-acceptance, unauthorized approvals, duplicate nonces and replay submissions. It exercises QA evidence, independent acceptance, approval, simulated submission, simulated confirmation and reconciliation.
+
+**This code never signs or broadcasts a cryptocurrency transaction and must not be used to hold or spend real funds.** A green test suite proves only those limited offline behaviors.
+
+Run locally with: `PYTHONPATH=src python3 -m unittest discover -s tests -v`.
+
 ## Project documents
 | Area | Document |
 |---|---|
