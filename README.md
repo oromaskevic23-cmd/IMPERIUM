@@ -73,6 +73,7 @@ Run locally with: `PYTHONPATH=src python3 -m unittest discover -s tests -v`.
 | Source and evidence | [Verified Token Facts](docs/TOKEN-FACTS.md) |
 | Delivery | [Evidence-Gated Roadmap](docs/ROADMAP.md) |
 | Listing | [Exchange Readiness](docs/EXCHANGE-READINESS.md) |
+| Public communications | [Launch Communications Kit](docs/LAUNCH-COMMUNICATIONS.md) |
 | Market integrity | [Transparency and Risks](docs/TRANSPARENCY.md) |
 | Legal preparation | [White Paper Outline](docs/WHITEPAPER-OUTLINE.md) |
 | Security | [Security Policy](SECURITY.md) |
