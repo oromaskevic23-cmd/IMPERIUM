@@ -1,5 +1,7 @@
 # IMPERIUM
 
+**Project founder and founding architect:** Alexander Nikolaevich Romaskevich (RomaskevicH). [Authorship and contribution provenance](AUTHORS.md).
+
 <p align="center">
   <img src="assets/imperium-hero-20261029.jpg" alt="IMPERIUM digital emblem" width="420">
 </p>
