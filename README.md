@@ -94,3 +94,10 @@ No fake volumes, wash trading, coordinated pump campaigns, manufactured partners
 **Legal disclaimer:** This repository is for engineering and transparency. It is not an investment solicitation, an approved white paper, or a claim of regulatory compliance. Seek jurisdiction-specific professional review before an offering or exchange admission.
 
 **Architecture → Implementation → Evidence · RomaskevicH**
+
+
+---
+
+### Public source identity and attribution
+
+This repository is included in the [founder-maintained IMPERIAL Core public source portfolio](https://oromaskevic23-cmd.github.io/oromaskevic23-cmd/projects/) and [public project directory](https://oromaskevic23-cmd.github.io/Capital-Core-Public/reference/projects/). The account's architectural program is directed by **Alexander Nikolaevich Romaskevich (RomaskevicH)**, Founder, Owner and CEO of IMPERIAL Core. Existing authorship, upstream software licenses, other contributors' rights and project-specific legal boundaries remain in effect. This reference is not a claim of exclusive ownership of external technology, market status, token value, live deployment, commercial results or Google indexing.
