@@ -32,6 +32,8 @@ Build a **permissioned and independently verifiable settlement layer** for profe
 
 This is the **long-term architectural vision** for IMPERIUM, not a claim of current worldwide use.
 
+[Buyer value and proposed utility](docs/BUYER_VALUE_AND_UTILITY_20261105.md) explains a concrete service-payment hypothesis, its customer benefit and the evidence needed before real-value use.
+
 ## Federated architecture
 
 ```text
@@ -67,9 +69,9 @@ Reconciliation -> Proof Passport -> Audit Ledger
 - Inter-organizational economic coordination without bypassing owner controls.
 
 ## Offline engineering prototype (experimental)
-`src/imperium_mock/settlement.py` contains a **standard-library-only, in-memory simulation** of agent settlement governance. It rejects wrong-chain/wrong-contract requests, unallowlisted recipients, excessive amounts, expired intents, self-acceptance, unauthorized approvals, duplicate nonces and replay submissions. It exercises QA evidence, independent acceptance, approval, simulated submission, simulated confirmation and reconciliation.
+`src/imperium_mock/settlement.py` contains a **standard-library-only, in-memory simulation** of agent settlement governance. It rejects wrong-chain/wrong-contract requests, unallowlisted recipients, excessive amounts, expired intents, self-acceptance, unauthorized approvals, duplicate nonces and replay submissions. Intent terms are immutable through the public API after construction. It exercises QA evidence, independent acceptance, approval, simulated submission, simulated confirmation and reconciliation.
 
-**This code never signs or broadcasts a cryptocurrency transaction and must not be used to hold or spend real funds.** A green test suite proves only those limited offline behaviors.
+**This code never signs or broadcasts a cryptocurrency transaction and must not be used to hold or spend real funds.** Its Python process and in-memory state are not an adversarial security boundary; the mock QA and approval values are not cryptographic identity or authorization. A green test suite proves only those limited offline behaviors.
 
 Run locally with: `PYTHONPATH=src python3 -m unittest discover -s tests -v`.
 
@@ -86,7 +88,7 @@ Run locally with: `PYTHONPATH=src python3 -m unittest discover -s tests -v`.
 | Legal preparation | [White Paper Outline](docs/WHITEPAPER-OUTLINE.md) |
 | Security | [Security Policy](SECURITY.md) |
 | Contributions | [Contributing](CONTRIBUTING.md) |
-| Related projects | [NDB](https://github.com/oromaskevic23-cmd/N.D.B-) · [Nano Core Agents](https://github.com/oromaskevic23-cmd/Nano-Core-Agents-Public) |
+| Related projects | [NDB](https://github.com/oromaskevic23-cmd/N.D.B) · [Nano Core Agents](https://github.com/oromaskevic23-cmd/Nano-Core-Agents-Public) |
 
 ## Trust before promotion
 No fake volumes, wash trading, coordinated pump campaigns, manufactured partnerships, undeclared advertising, unsubstantiated price targets, or announcements of unapproved exchange listings. Only externally verifiable achievements may be described as achieved.

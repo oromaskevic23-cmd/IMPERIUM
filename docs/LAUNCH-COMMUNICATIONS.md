@@ -1,4 +1,6 @@
 # IMPERIUM — Public Launch Communications Kit
+**Project founder and architect:** Alexander Nikolaevich Romaskevich (RomaskevicH)
+
 **Draft 0.1 | 2026-10-29 | Approval required before external distribution**
 
 ## Canonical public positioning
@@ -11,7 +13,7 @@ The IMPERIUM contract exists on Polygon mainnet, and its source is exact-match v
 Contract: `0xcFd2149B2b1a9c0A55954A937adBee0DdaA3c9b3`  
 Network: Polygon Mainnet (137)  
 Code verification: https://repo.sourcify.dev/137/0xcFd2149B2b1a9c0A55954A937adBee0DdaA3c9b3  
-GitHub: https://github.com/oromaskevic23-cmd/IMPERIUM-
+GitHub: https://github.com/oromaskevic23-cmd/IMPERIUM
 
 ## English project announcement — suitable for publication after owner review
 
@@ -41,7 +43,7 @@ A verifiable contract on Polygon. A documented architecture for future agent-to-
 
 Our direction: real utility, transparent engineering and independent evidence — **not promises of future returns**.
 
-Explore the project: https://github.com/oromaskevic23-cmd/IMPERIUM-
+Explore the project: https://github.com/oromaskevic23-cmd/IMPERIUM
 
 ## Community roadmap — evidence-led
 1. Publish exact token contract facts and technical limitation disclosures.

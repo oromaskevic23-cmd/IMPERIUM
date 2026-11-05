@@ -1,4 +1,8 @@
-"""Tests prove offline behavior only, not production readiness."""
+"""Project author and founding architect: Alexander Nikolaevich Romaskevich (RomaskevicH).
+
+Tests prove offline behavior only, not production readiness.
+"""
+from dataclasses import FrozenInstanceError
 import unittest
 from imperium_mock.settlement import Intent, MockSettlementLedger, PolicyError, CONTRACT
 
@@ -83,6 +87,32 @@ class MockSettlementTests(unittest.TestCase):
         self.ledger.register(sample(), NOW)
         with self.assertRaises(PolicyError):
             self.ledger.attest_qa("example-1", "not-a-hash")
+
+    def test_terms_and_public_ledger_view_cannot_be_changed_after_registration(self):
+        intent = sample()
+        self.ledger.register(intent, NOW)
+        with self.assertRaises(FrozenInstanceError):
+            intent.recipient = "0x" + "2" * 40
+        with self.assertRaises(FrozenInstanceError):
+            self.ledger.intents["example-1"].amount_base_units = 9999
+        with self.assertRaises(TypeError):
+            self.ledger.intents["example-1"] = sample(amount_base_units=9999)
+        with self.assertRaises(AttributeError):
+            self.ledger.max_amount = 9999
+        self.assertEqual(self.ledger.intents["example-1"].recipient, RECIPIENT)
+        self.assertEqual(self.ledger.intents["example-1"].amount_base_units, 100)
+
+    def test_invalid_or_nonfinite_clocks_never_pass(self):
+        for bad_now in (float("nan"), float("inf"), True, -1, "1000"):
+            with self.subTest(now=bad_now), self.assertRaises(PolicyError):
+                self.ledger.register(sample(), bad_now)
+        with self.assertRaises(PolicyError):
+            self.ledger.register(sample(expires_at=float("nan")), NOW)
+        self.ledger.register(sample(), NOW)
+        self.ledger.attest_qa("example-1", "e" * 64)
+        self.ledger.accept("example-1", "CLIENT")
+        with self.assertRaises(PolicyError):
+            self.ledger.approve("example-1", "ARCHITECT-APPROVER", float("nan"))
 
 if __name__ == "__main__":
     unittest.main()
