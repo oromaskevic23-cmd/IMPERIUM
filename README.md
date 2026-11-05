@@ -68,6 +68,10 @@ Reconciliation -> Proof Passport -> Audit Ledger
 - WORK AI service-order settlement following client acceptance and authorization.
 - Inter-organizational economic coordination without bypassing owner controls.
 
+## Offline governance hardening — 5 November 2026
+
+The in-memory mock now rejects prefilled QA/approval evidence, malformed authority and spending limits, and altered mock audit events before the next transition. A hash chain in one Python process is **not** a signed or tamper-proof Audit Ledger and must never authorize real tokens. [Controls, negative tests and production limitations](docs/OFFLINE_GOVERNANCE_HARDENING_20261105.md).
+
 ## Offline engineering prototype (experimental)
 `src/imperium_mock/settlement.py` contains a **standard-library-only, in-memory simulation** of agent settlement governance. It rejects wrong-chain/wrong-contract requests, unallowlisted recipients, excessive amounts, expired intents, self-acceptance, unauthorized approvals, duplicate nonces and replay submissions. Intent terms are immutable through the public API after construction. It exercises QA evidence, independent acceptance, approval, simulated submission, simulated confirmation and reconciliation.
 
