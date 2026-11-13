@@ -1,14 +1,15 @@
 # IMPERIUM
 
 <p align="center">
+  <img src="assets/imperium-hero-20261029.jpg" alt="IMPERIUM digital emblem" width="420">
+</p>
+
+<p align="center">
   <img src="https://raw.githubusercontent.com/oromaskevic23-cmd/oromaskevic23-cmd/main/assets/alexander-romaskevich-portrait-20261110.jpg" alt="Alexander Nikolaevich Romaskevich, Founder, Owner and CEO of IMPERIAL Core" width="160" />
 </p>
 
 **Project founder and founding architect:** Alexander Nikolaevich Romaskevich (RomaskevicH). [Authorship and contribution provenance](AUTHORS.md).
 
-<p align="center">
-  <img src="assets/imperium-hero-20261029.jpg" alt="IMPERIUM digital emblem" width="420">
-</p>
 ### A long-term architectural digital currency for AI agents worldwide
 
 **An IMPERIAL Core / CRYPTO IMPERIAL Ecosystem initiative**  
